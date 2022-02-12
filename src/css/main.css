@@ -1,0 +1,506 @@
+:root {
+	--text-black: rgb(31, 31, 31);
+	--green-background: rgb(232, 255, 235);
+	--circle-background: #9aff9a;
+	font-size: 16px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: var(--green-background);
+	font-family: 'Quicksand', sans-serif;
+	overflow-x: hidden;
+}
+
+/* About Recycling */
+h2,
+h3 {
+	font-family: 'Oswald', sans-serif;
+	color: var(--text-black);
+}
+
+h2 {
+	text-align: center;
+	font-size: 2em;
+	color: var(--text-black);
+}
+
+#about-recycling {
+	width: 90%;
+	margin: auto;
+}
+
+.definition {
+	text-align: justify;
+	width: 100%;
+	margin: auto;
+	line-height: 1.5;
+	font-size: 1.2rem;
+	text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Trash Hierarchy */
+h3 {
+	font-size: 1.6rem;
+	font-weight: 600;
+}
+
+.trash-hierarchy {
+	width: 90%;
+	margin: 80px auto;
+}
+
+.trash-hierarchy .title {
+	width: 30%;
+	margin: auto;
+	text-align: center;
+}
+
+.trash-hierarchy .title > hr {
+	display: block;
+	margin-left: 0;
+	margin-top: -20px;
+	border-radius: 3px;
+	border: 0;
+	background-color: var(--text-black);
+	height: 4px;
+}
+
+.trash-hierarchy .ThreeR {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.trash-hierarchy figure {
+	background-color: white;
+	width: 280px;
+	border-radius: 10px;
+	padding: 1.5em 1.8em;
+	transition: 0.3s linear;
+}
+
+.trash-hierarchy figure:hover {
+	transform: translateY(-2px);
+	filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.3));
+}
+
+.trash-hierarchy img {
+	margin: auto;
+	display: block;
+}
+
+.trash-hierarchy figcaption h4 {
+	text-align: center;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+.trash-hierarchy figcaption p {
+	font-size: 1rem;
+	text-align: left;
+	color: rgb(102, 102, 102);
+	line-height: 1.5;
+}
+
+/* Some Reyclable Material */
+.some-recyclable {
+	width: 90%;
+	margin: auto;
+}
+
+.some-recyclable .title {
+	width: 40%;
+	margin: auto;
+	text-align: center;
+}
+
+.some-recyclable .title p {
+	font-size: 1.12rem;
+	text-align: left;
+	font-weight: 400;
+	text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.some-recyclable .title > hr {
+	display: block;
+	margin-left: 0;
+	margin-top: -20px;
+	background-color: var(--text-black);
+	height: 4px;
+	border-radius: 3px;
+	border: 0;
+}
+
+.some-recyclable .materials {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.some-recyclable .materials figure {
+	background-color: white;
+	width: 280px;
+	border-radius: 10px;
+	padding: 1.4em 1.6em;
+	transition: 0.3s linear;
+}
+
+.some-recyclable figure:hover {
+	transform: translateY(-2px);
+	filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.3));
+}
+
+.some-recyclable img {
+	margin: auto;
+	display: block;
+}
+
+.some-recyclable figcaption h4 {
+	text-align: center;
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+
+/* Benefits Of Recycling */
+.benefits-recycling {
+	width: 90%;
+	margin: 80px auto;
+}
+
+.benefits-recycling .title {
+	width: 60%;
+	margin: auto;
+	text-align: center;
+}
+
+.benefits-recycling .title p {
+	font-size: 1.12rem;
+	text-align: left;
+	text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.benefits-recycling .title > hr {
+	display: block;
+	margin-left: 0;
+	margin-top: -20px;
+	background-color: var(--text-black);
+	border-radius: 3px;
+	border: 0;
+	height: 4px;
+}
+
+.benefits-recycling .benefits {
+	display: flex;
+	width: 82%;
+	flex-wrap: wrap;
+	margin: auto;
+	justify-content: space-between;
+}
+
+.benefits-recycling .benefit {
+	width: 48%;
+	border-radius: 8px;
+	background-color: white;
+	margin: 1rem 0;
+	display: flex;
+	align-items: center;
+	padding: 0.5em 1em;
+	transition: 0.3s linear;
+}
+
+.benefit .circle {
+	color: var(--text-black);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 500;
+	width: 40px;
+	height: 40px;
+	margin-right: 0.8em;
+	border-radius: 50%;
+	background-color: var(--circle-background);
+}
+
+.benefit:hover {
+	transform: translateY(-2px);
+	filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.3));
+}
+
+.benefit p {
+	color: rgb(102, 102, 102);
+	font-weight: 400;
+}
+
+/* Example Recycling */
+.recycling-example {
+	margin: auto;
+	width: 90%;
+}
+
+.recycling-example .title {
+	width: 60%;
+	margin: auto;
+	text-align: center;
+}
+
+.recycling-example .title > hr {
+	display: block;
+	margin-left: 0;
+	margin-top: -20px;
+	background-color: var(--text-black);
+	border-radius: 3px;
+	border: 0;
+	height: 4px;
+}
+
+.recycling-example figure {
+	width: 82%;
+	margin: 20px auto 0;
+}
+
+.recycling-example video {
+	width: 100%;
+	border-radius: 8px;
+	outline: 0;
+	filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
+}
+
+.recycling-example figcaption {
+	color: var(--text-black);
+	margin-top: -15px;
+}
+
+.recycling-example figcaption h4 {
+	font-size: 1.2rem;
+	font-weight: 600;
+	text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.recycling-example figcaption p {
+	margin-top: -12px;
+	text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.recycling-example figcaption p a {
+	text-decoration: none;
+	color: var(--text-black);
+	cursor: pointer;
+}
+
+.recycling-example figcaption p a:hover {
+	color: blue;
+}
+
+/* footer */
+.copyright {
+	font-weight: 500;
+	text-align: center;
+	font-size: 0.9rem;
+	text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+	margin-top: 80px;
+}
+
+@media screen and (min-width: 992px) {
+	.definition {
+		width: 60%;
+	}
+
+	.trash-hierarchy .title {
+		text-align: left;
+		margin-left: 7rem;
+	}
+
+	.trash-hierarchy .title > hr {
+		width: 200px;
+	}
+
+	.some-recyclable .title {
+		text-align: left;
+		margin-left: 7rem;
+	}
+
+	.some-recyclable .title > hr {
+		width: 320px;
+	}
+
+	.benefits-recycling .title {
+		text-align: left;
+		margin-left: 7rem;
+	}
+
+	.benefits-recycling .title > hr {
+		width: 280px;
+	}
+
+	.recycling-example .title {
+		text-align: left;
+		margin-left: 7rem;
+	}
+
+	.recycling-example .title > hr {
+		width: 250px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	h2 {
+		font-size: 1.8em;
+	}
+
+	h3 {
+		font-size: 1.4rem;
+	}
+
+	.definition {
+		font-size: 1em;
+	}
+
+	.trash-hierarchy .title,
+	.some-recyclable .title,
+	.benefits-recycling .title,
+	.recycling-example .title {
+		width: 100%;
+		text-align: center;
+	}
+
+	.some-recyclable .title p,
+	.benefits-recycling .title p {
+		text-align: center;
+	}
+
+	.trash-hierarchy .title > hr,
+	.benefits-recycling .title > hr,
+	.some-recyclable .title > hr,
+	.recycling-example .title > hr {
+		margin: -20px auto 20px;
+	}
+
+	.trash-hierarchy .title > hr {
+		width: 20%;
+	}
+
+	.benefits-recycling .title > hr {
+		width: 22%;
+	}
+
+	.some-recyclable .title > hr {
+		width: 30%;
+	}
+
+	.recycling-example .title > hr {
+		width: 40%;
+	}
+
+	.trash-hierarchy .ThreeR,
+	.some-recyclable .materials,
+	.benefits-recycling .benefits {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.trash-hierarchy figure img {
+		width: 60px;
+	}
+
+	.some-recyclable figure img {
+		width: 100px;
+	}
+
+	.trash-hierarchy figure {
+		width: 280px;
+		margin: 1em 0;
+	}
+
+	.some-recyclable .materials figure {
+		padding: 1.2em 0;
+		width: 250px;
+		margin: 1em 0;
+	}
+
+	.benefits-recycling .benefits {
+		width: 100%;
+	}
+
+	.benefits-recycling .benefit {
+		width: 100%;
+	}
+
+	.benefit .circle {
+		width: 30px;
+		height: 30px;
+	}
+
+	.benefit p {
+		font-size: 1rem;
+	}
+
+	.recycling-example figure {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	h2 {
+		font-size: 1.7rem;
+	}
+
+	.definition {
+		font-size: 1rem;
+	}
+
+	.trash-hierarchy figcaption h4 {
+		font-size: 1.1rem;
+	}
+
+	.trash-hierarchy figcaption p {
+		font-size: 0.8rem;
+		text-align: center;
+	}
+
+	.trash-hierarchy figure {
+		width: 240px;
+		margin: 1em 0;
+	}
+
+	.trash-hierarchy figure img {
+		width: 50px;
+	}
+
+	.some-recyclable figure img {
+		width: 80px;
+	}
+
+	.some-recyclable .materials figure {
+		width: 200px;
+	}
+
+	.some-recyclable figcaption h4 {
+		font-size: 1rem;
+	}
+
+	.some-recyclable .title p,
+	.benefits-recycling .title p {
+		font-size: 1rem;
+	}
+
+	.benefits-recycling .benefit {
+		padding: 0.5em 0.6em;
+	}
+
+	.benefit .circle {
+		font-size: 0.9rem;
+		width: 25px;
+		height: 25px;
+	}
+
+	.benefit p {
+		font-size: 0.7rem;
+	}
+}
