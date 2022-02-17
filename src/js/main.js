@@ -20,8 +20,18 @@ const recyclingExampleTitle = document.querySelector('.recycling-example .title 
 const recyclingExampleHorizontalLine = document.querySelector('.recycling-example .title hr');
 const recyclingExampleFigure = document.querySelector('.recycling-example figure');
 
+
+const nav = document.querySelector('nav');
+
 // Animation related with documents, except animation scrollTop above
 window.addEventListener('scroll', function() {
+
+    if(document.documentElement.scrollTop > 100 || document.body.scrollTop > 100 ) {
+        nav.style.boxShadow = "0 1px 20px rgba(0, 0, 0, 0.2)";
+    } else {
+         nav.style.boxShadow = "0 0 0 rgba(0, 0, 0, 0)";
+    }
+
     // scroll To Top
     if(document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
         scrollToTop.style.display = "block";
@@ -62,13 +72,12 @@ window.addEventListener('scroll', function() {
     }
 
     // Recycling's Examples
-    if(document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
+    if(document.body.scrollTop > 1300 || document.documentElement.scrollTop > 1300) {
         recyclingExampleTitle.style.opacity = 1;
         recyclingExampleTitle.style.transform = "scale(1)";
         recyclingExampleHorizontalLine.style.opacity = 1;
         setTimeout(function() {
             recyclingExampleFigure.style.opacity = 1;
-            recyclingExampleFigure.style.transform = "scale(1)";
         }, 500);
     }
 });
@@ -100,4 +109,12 @@ window.onload = function() {
         }
     }, 500 * 3);
 }
+
+
+const hamburgerMenu = document.querySelector(".hamburger-menu");
+const navLinks = document.querySelector(".nav-links");
+
+hamburgerMenu.addEventListener('click', function() {
+    navLinks.classList.toggle("fade-left");
+});
 
