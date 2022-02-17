@@ -1,11 +1,15 @@
 @font-face {
-	font-family: sans-serif;
+	font-family: 'Oswald';
 	src: url('../Fonts/Oswald/static/Oswald-Bold.ttf') format('truetype');
 	src: url('../Fonts/Oswald/static/Oswald-ExtraLight.ttf') format('truetype');
 	src: url('../Fonts/Oswald/static/Oswald-Light.ttf') format('truetype');
 	src: url('../Fonts/Oswald/static/Oswald-Medium.ttf') format('truetype');
 	src: url('../Fonts/Oswald/static/Oswald-Regular.ttf') format('truetype');
 	src: url('../Fonts/Oswald/static/Oswald-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Quicksand';
 	src: url('../Fonts/Quicksand/static/Quicksand-Bold.ttf') format('truetype');
 	src: url('../Fonts/Quicksand/static/Quicksand-Light.ttf') format('truetype');
 	src: url('../Fonts/Quicksand/static/Quicksand-Medium.ttf') format('truetype');
